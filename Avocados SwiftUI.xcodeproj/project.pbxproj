@@ -19,6 +19,7 @@
 		763BDE332B0F1D49008F27AC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BDE322B0F1D49008F27AC /* HeaderView.swift */; };
 		763BDE352B0F33DE008F27AC /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BDE342B0F33DE008F27AC /* HeaderModel.swift */; };
 		763BDE382B0F347C008F27AC /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BDE372B0F347C008F27AC /* HeaderData.swift */; };
+		763BDE3A2B0F41C2008F27AC /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BDE392B0F41C2008F27AC /* DishesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		763BDE322B0F1D49008F27AC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		763BDE342B0F33DE008F27AC /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		763BDE372B0F347C008F27AC /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
+		763BDE392B0F41C2008F27AC /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				763BDE2E2B0F0166008F27AC /* SettingsView.swift */,
 				763BDE302B0F017F008F27AC /* AppView.swift */,
 				763BDE322B0F1D49008F27AC /* HeaderView.swift */,
+				763BDE392B0F41C2008F27AC /* DishesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				763BDE2B2B0F00E8008F27AC /* AvocadosView.swift in Sources */,
 				763BDE352B0F33DE008F27AC /* HeaderModel.swift in Sources */,
 				763BDE382B0F347C008F27AC /* HeaderData.swift in Sources */,
+				763BDE3A2B0F41C2008F27AC /* DishesView.swift in Sources */,
 				763BDE332B0F1D49008F27AC /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
