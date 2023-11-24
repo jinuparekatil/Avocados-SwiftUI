@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct RecipeRatingView: View {
+    // Mark:-  PROPERTIES
+    var recipe : Recipe
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center,spacing: 5) {
+            ForEach(1 ..< (recipe.rating),id: \.self) { _ in
+                Image(systemName: "star.fill")
+                    .font(.body)
+                .foregroundStyle(.yellow)
+            }
+        }
     }
 }
 
-#Preview {
-    RecipeRatingView()
+#Preview(traits : .sizeThatFitsLayout) {
+    RecipeRatingView(recipe: recipeData[0])
 }

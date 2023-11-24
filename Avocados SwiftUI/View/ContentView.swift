@@ -12,6 +12,9 @@ struct ContentView: View {
     
     var headers : [Header] = headerData
     
+    var facts: [Fact] = factData
+    var recips: [Recipe] = recipeData
+    
     var body: some View {
         ScrollView(.vertical,showsIndicators : false){
                 VStack(alignment: .center,spacing: 20){
@@ -32,6 +35,34 @@ struct ContentView: View {
                     
                     DishesView()
                         .frame(maxWidth: 640)
+                    // Mark:- AVOCADO FACTS
+                    Text("Avocado Facts")
+                        .fontWeight(.bold)
+                        .modifier(TitleModifier())
+                    
+                    ScrollView(.horizontal,showsIndicators: false){
+                        HStack(alignment: .top,spacing: 60){
+                            ForEach(facts) { fact in
+                                FactsView(fact: fact)
+                            }
+                        }
+                        .padding(.vertical)
+                        .padding(.leading,60)
+                        .padding(.trailing,20)
+                        
+                        
+                    }
+                    // Mark:- RECIPE CARDS
+                    Text("Avocado Recipes")
+                        .fontWeight(.bold)
+                        .modifier(TitleModifier())
+                    VStack(alignment: .center, spacing: 20){
+                        ForEach(recips) { recipe in
+                            RecipeCardView(recipe: recipe)
+                        }
+                    }
+                    .frame(maxWidth: 640)
+                    .padding(.horizontal)
                     // Mark:- FOOTER
                     VStack(alignment: .center,spacing: 20) {
                         Text("All About avocados")
@@ -63,5 +94,5 @@ struct TitleModifier: ViewModifier{
     }
 }
 #Preview {
-    ContentView(headers: headerData)
+    ContentView(headers: headerData , facts: factData,recips: recipeData)
 }
